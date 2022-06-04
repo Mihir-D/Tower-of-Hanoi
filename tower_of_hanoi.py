@@ -10,13 +10,16 @@ def solveTowerOfHanoi(n, A, B, C):
     # move n-1 elements which are on C to B
     solveTowerOfHanoi(n-1, C, B, A)
 
-if __name__ == __main__:
+if __name__ == "__main__":
     # read input
+    print("Enter number of disks: ")
+    total_disks = int(input())
+    print("total disks entered by user = ", total_disks)
     # A = stack of disks. add n, n-1, ... 1 to stack
     # B = empty destination stack
     # C = empty auxiliary stack
-    solveTowerOfHanoi(n, A, B, C)
+    # solveTowerOfHanoi(n, A, B, C)
 
-    print(A)
-    print(B)
-    print(C)
+    # print(A)
+    # print(B)
+    # print(C)
